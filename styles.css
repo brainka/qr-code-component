@@ -56,13 +56,46 @@ p {
 	font-size: 1.5rem;
 	text-align: center;
 	color: #7d889e;
-	line-height: 2.3rem;
+	line-height: 2.5rem;
 }
 
 img {
 	width: 16rem;
+	z-index: 1;
 }
 
 .bottom-container {
 	padding: 0 1.5rem;
+}
+
+.top-container {
+	position: relative;
+
+	overflow: hidden;
+}
+
+.top-container::before {
+	content: '';
+	display: block;
+	border-radius: 50%;
+	width: 32.8rem;
+	height: 32.8rem;
+	background-color: rgb(86, 152, 255, 0.2);
+
+	position: absolute;
+	top: -16.5rem;
+	left: -13.5rem;
+}
+
+.top-container::after {
+	content: '';
+	display: block;
+	border-radius: 50%;
+	width: 32.8rem;
+	height: 32.8rem;
+	background-color: rgb(86, 152, 255, 0.2);
+
+	position: absolute;
+	top: 20.5rem;
+	left: 13rem;
 }
